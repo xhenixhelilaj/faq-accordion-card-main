@@ -10,12 +10,15 @@
 .card-features-item{
     display: flex;
     background-image: url("/images/bg-pattern-desktop.svg");
+    background-position: left -40vw bottom -40vh;
+    background-color: white;
+    background-repeat: no-repeat;
     border-radius: 20px;
     flex-basis: 50%;
 }
 .card{
     padding: 10%;
-    
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
 }
 .img-mobile{
     display: none;
@@ -32,4 +35,18 @@
 .list-questions{
     margin-top: 30px;
     padding-right: 20%
+}
+.illustration{
+    position: relative;
+    top:300px;
+    right: 20px;
+}
+picture{
+    position: relative;
+    bottom: 120px;
+    right: 70px;
+}
+.img-dekstop{
+    z-index: 3;
+    transition: 1s ease-in-out;
 }
