@@ -1,0 +1,35 @@
+:root{
+    --font-family: 'Kumbh Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-features-item{
+    display: flex;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    border-radius: 20px;
+    flex-basis: 50%;
+}
+.card{
+    padding: 10%;
+    
+}
+.img-mobile{
+    display: none;
+}
+.faq{
+    flex-basis: 50%; 
+    font-family: var(--font-family);  
+}
+
+.header{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.list-questions{
+    margin-top: 30px;
+    padding-right: 20%
+}
