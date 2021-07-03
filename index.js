@@ -1,3 +1,6 @@
-const button = document.querySelector(".onClick")
-const answer = document.querySelector(".answer")
-
+const lists = document.querySelectorAll(".list-questions")
+lists.forEach(list =>{
+    list.addEventListener("click",() =>{
+       list.classList.toggle("active") 
+    })
+})
