@@ -1,6 +1,8 @@
-const lists = document.querySelectorAll(".list-questions")
-lists.forEach(list =>{
-    list.addEventListener("click",() =>{
-       list.classList.toggle("active") 
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () =>{
+      faq.classList.toggle("active");
     })
 })
+    

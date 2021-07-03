@@ -38,44 +38,23 @@ body{
     top: 7rem;
     right: 5.8rem;
 }
-.faq{
+.faqs{
     flex-basis: 50%;
-    padding: 2%;
 }
-.faq .header{
-    font-size: 24px;
-    margin: 20px 20px 20px 0;
-}
-.list-questions{
-    padding:3%;
-    
+.faq{
+    margin-top: 2rem;
+    border-bottom: 0.5px solid lightgrey;
+    cursor: pointer;
 }
 .question{
-    color: grey;
-    font-size: 15px;
     display: flex;
+    min-height: 4vh;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-bottom: .05px solid grey;
-    cursor: pointer;
-}
-button{
-    border: none;
-    background-color: transparent;
-}
-button:hover{
-    cursor: pointer;
 }
 .answer{
-    font-size: 12px;
-    line-height: 20px;
-    overflow: hidden;
     max-height: 0;
+    overflow: hidden;
 }
-li{
-    list-style: none;
-}
-.list-questions.active.answer{
+.faq.active .answer{
     max-height: 300px;
 }
