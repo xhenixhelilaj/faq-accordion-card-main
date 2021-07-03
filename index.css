@@ -21,9 +21,10 @@ body{
 }
 .card-features-item{
     display: flex;
-    
+    padding-top: 5%;
 }
-.card-features-item-illustration{
+.illustration-picture{
+    padding-bottom: 20% ;
     position: relative;
     right: 55px;
     flex-basis: 50%;
@@ -31,7 +32,7 @@ body{
     background-repeat: no-repeat;
     background-size: 450px;
     background-position-x: -50px;
-    background-position-y: 10px;    
+        
 }
 .illustration{
     position: relative;
@@ -39,11 +40,13 @@ body{
     right: 5.8rem;
 }
 .faqs{
-    flex-basis: 50%;
-    
+    flex-basis: 40%;
+    max-width: 350px;
+    margin-left: 10%;
+    margin-top: 20px;
 }
 .faq{
-    margin-top: 2rem;
+    margin-top: 13px;
     border-bottom: 0.5px solid lightgrey;
     cursor: pointer;
     flex-direction:column ;
@@ -52,6 +55,8 @@ body{
     display: flex;
     min-height: 4vh;
     justify-content: space-between;
+    font-size: 13px;
+    color: grey;
 }
 .question h4{
     font-weight: 500;
@@ -61,17 +66,21 @@ body{
     overflow: hidden;
     transition: 0.4s;
     margin-bottom: 0.5rem;
+    font-size: 13px;
+    line-height: 20px;
 }
 svg{
     transition: transform 0.4s ease-in-out;
 }
 .faq.active .question h4{
     font-weight: 900;
+    color: black;
+
 }
 .faq.active .answer{
     max-height: 300px;
     animation: fade 0.4s ease-in-out;
-    
+
 }
 .faq.active svg{
     transform: rotate(180deg);
