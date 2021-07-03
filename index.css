@@ -54,6 +54,8 @@ body{
 .answer{
     max-height: 0;
     overflow: hidden;
+    transition: 1s;
+
 }
 .faq.active .answer{
     max-height: 300px;
