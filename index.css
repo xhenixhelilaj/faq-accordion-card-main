@@ -76,3 +76,6 @@ button:hover{
 li{
     list-style: none;
 }
+.list-questions.active.answer{
+    max-height: 300px;
+}
