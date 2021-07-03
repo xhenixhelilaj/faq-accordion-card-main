@@ -40,23 +40,49 @@ body{
 }
 .faqs{
     flex-basis: 50%;
+    
 }
 .faq{
     margin-top: 2rem;
     border-bottom: 0.5px solid lightgrey;
     cursor: pointer;
+    flex-direction:column ;
 }
 .question{
     display: flex;
     min-height: 4vh;
     justify-content: space-between;
 }
+.question h4{
+    font-weight: 500;
+}
 .answer{
     max-height: 0;
     overflow: hidden;
-    transition: 1s;
-
+    transition: 0.4s;
+    margin-bottom: 0.5rem;
+}
+svg{
+    transition: transform 0.4s ease-in-out;
+}
+.faq.active .question h4{
+    font-weight: 900;
 }
 .faq.active .answer{
     max-height: 300px;
+    animation: fade 0.4s ease-in-out;
+    
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
