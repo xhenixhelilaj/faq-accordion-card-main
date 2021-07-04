@@ -14,8 +14,8 @@ body{
     border-radius: 30px;
     background-image: url("/images/bg-pattern-desktop.svg");
     background-position: left -45vw bottom -25vh;
-    background-color: white;
     background-repeat: no-repeat;
+    background-color: white;
     padding: 6%;
     
 }
@@ -99,6 +99,9 @@ svg{
 }
 
 @media (max-width:600px){
+    .card{
+        padding: 17% 12% 12% 15%
+    }
     .card-features{
         margin: 1% 13% 1% 1%;
         display: flex;
@@ -112,12 +115,14 @@ svg{
     }
     .desktop{
         display: block;
-        width: 250px;
+        width: 180px;
         position: relative;
-        top: -130px;
-        left: -10px;
+        top: -110px;
+        right:-30px;
     }
    .faqs{
+       position: relative;
+       top: -13px;
        flex-basis: 100%;
        margin-left: 1px;
        margin: 0;
